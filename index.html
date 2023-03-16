@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main> 
+    <header>
+      <h1 class="title">Simple, traffic-based pricing</h1>
+      <p class="sub-title">Sign-up for our 30-day trial No credit card required.</p>
+    </header>
+
+    <div class="pricing-container">
+      <div class="top-container">
+        <span class="pageviews" style="text-transform: uppercase;"><span class="pageview-count">100k</span> Pageviews</span>
+
+        <p class="pricing"><span class="bold price">$16.00</span>/ month</p>
+      </div>
+
+      <div class="slider-container">
+        <input type="range" min="0" max="4" value="2" class="range"/>
+      </div>
+
+      <div class="switch-billing-container">
+        <p>Monthly Billing </p>
+
+        <div class="toggle-switch">
+          <div class="circle" data-position="monthly"></div>
+        </div>
+
+        <p class="year-billing">Yearly Billing</p>
+        <!-- <span class="discount">25% discount</span> -->
+      </div>
+    </div>
+    <footer>
+      <div class="perks-container">
+        <span>  
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            width="9" height="8"><path fill="none" 
+            stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 
+            1.908L7.949 1"/>
+          </svg>
+
+           <span class="perks-text">Unlimited websites</span> 
+        </span>
+
+        <span>  
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            width="9" height="8"><path fill="none" 
+            stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 
+            1.908L7.949 1"/>
+          </svg>
+
+           <span class="perks-text">100% data ownership</span>
+        </span>
+
+        <span>  
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            width="9" height="8"><path fill="none" 
+            stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 
+            1.908L7.949 1"/>
+          </svg>
+
+           <span class="perks-text"> Email reports</span>
+        </span>
+      </div>
+
+      <button class="submit-btn">Start my trial</button>
+    </footer>
+
+  </main>  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="index.js"></script>
+</body>
+</html>
